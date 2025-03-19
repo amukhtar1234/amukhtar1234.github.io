@@ -11657,6 +11657,7 @@ html {
     left: -4vw;
   }
 }
+
 @media (min-width: 768px) {
   .profile {
     height: 50vw;
