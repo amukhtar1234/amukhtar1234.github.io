@@ -11733,3 +11733,88 @@ html {
     left: -2vw;
   }
 }
+
+/* Custom Elegant Navbar */
+.custom-navbar {
+  background: rgba(255, 255, 255, 0.8); /* Soft transparent white */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Silky smooth shadow */
+  transition: all 0.3s ease-in-out;
+  padding: 12px 0;
+}
+
+/* Navbar Brand */
+.custom-navbar .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #004aad !important; /* Deep classy blue */
+  transition: color 0.3s ease-in-out;
+}
+
+.custom-navbar .navbar-brand:hover {
+  color: #d4af37 !important; /* Soft gold hover */
+}
+
+/* Navbar Links */
+.custom-navbar .nav-link {
+  color: #333 !important; /* Dark gray for elegance */
+  transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  padding: 10px 15px;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #d4af37 !important; /* Gold hover effect */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Navbar Toggler */
+.custom-navbar .navbar-toggler {
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.custom-navbar .navbar-toggler-icon {
+  filter: brightness(0.5); /* Dim the toggler icon */
+}
+
+/* Adjust Navbar on Scroll */
+.custom-navbar.scrolled {
+  background: rgba(255, 255, 255, 0.95); /* Slightly stronger background */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 8px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Custom Elegant Navbar */
+.custom-navbar {
+  background: rgba(255, 255, 255, 0.8); /* Soft transparent white */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Silky smooth shadow */
+  transition: all 0.3s ease-in-out;
+  padding: 12px 0;
+  height: auto; /* Let the content define height */
+}
+
+/* Ensure header does not get overlapped by navbar */
+header {
+  padding-top: 0; /* Default - will be adjusted dynamically */
+}
+
+/* Custom Elegant Navbar */
+.custom-navbar {
+  background: rgba(255, 255, 255, 0.8); /* Soft transparent white */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Silky smooth shadow */
+  transition: all 0.3s ease-in-out;
+  padding: 12px 0;
+  position: fixed; /* Ensure navbar stays at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it stays above everything */
+}
+
+/* Ensure header does not get overlapped */
+header {
+  padding-top: 100px; /* Temporary fix in case JS fails */
+}
+
