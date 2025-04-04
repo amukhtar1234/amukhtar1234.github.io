@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="Free Blockchain and Graphics Design Training by Hon. Tajuddeen Abbas. Empowering students with in-demand skills for the tech industry." />
         <meta name="author" content="Hon. Tajuddeen Abbas" />
         <meta name="keywords" content="Blockchain, Graphics Design, Free Training, Hon. Tajuddeen Abbas, Tech Skills" />
@@ -15,79 +17,180 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            /* Improved particles container */
+            #particles-js {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                z-index: 0;
+                opacity: 0.7;
+            }
+            
+            /* Ensure content stays above particles */
+            main {
+                position: relative;
+                z-index: 1;
+            }
+            
+            /* Improved text visibility */
+            .text-gradient {
+                background: linear-gradient(to right, #0d6efd, #6610f2);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            
+            /* Darker text for better contrast */
+            .display-1, .display-5, h2, .lead {
+                text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+            }
+            
+            /* Enhanced profile image container */
+            .profile-img-container {
+                position: relative;
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                overflow: hidden;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+                border: 5px solid white;
+            }
+            
+            .profile-img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        </style>
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     </head>
-  
-
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-        <div id="particles-js" style="position:absolute; width:100%; height:100%; top:0; left:0; z-index:0;"></div>
+    <body class="d-flex flex-column h-100 bg-light">
+        <div id="particles-js"></div>
         <script>
         particlesJS("particles-js", {
             "particles": {
-            "number": { "value": 60 },
-            "color": { "value": "#0d6efd" },
-            "shape": { "type": "circle" },
-            "size": { "value": 3, "random": true },
-            "move": { "speed": 1.5 }
-            }
+                "number": { 
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": { 
+                    "value": ["#0d6efd", "#6610f2", "#198754", "#fd7e14"] 
+                },
+                "shape": { 
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": true,
+                    "anim": {
+                        "enable": true,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": { 
+                    "value": 4, 
+                    "random": true,
+                    "anim": {
+                        "enable": true,
+                        "speed": 2,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#0d6efd",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": { 
+                    "enable": true,
+                    "speed": 1.5,
+                    "direction": "none",
+                    "random": true,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": true,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "grab"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 140,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    }
+                }
+            },
+            "retina_detect": true
         });
         </script>
 
-    <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
             <!-- Navigation-->
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white custom-navbar shadow-sm">
-    <div class="container px-3 px-lg-4">
-        <a class="navbar-brand fw-bold text-primary fs-5" href="index.html">
-            Hon. Tajuddeen Abbas
-        </a>
-        <button class="navbar-toggler border-0 py-2" type="button" 
-                data-bs-toggle="collapse" data-bs-target="#navbarContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item mx-1 mx-lg-2">
-                    <a class="nav-link px-3 py-2 rounded active" href="index.html">Home</a>
-                </li>
-                <li class="nav-item mx-1 mx-lg-2">
-                    <a class="nav-link px-3 py-2 rounded" href="projects.html">Programs</a>
-                </li>
-                <li class="nav-item mx-1 mx-lg-2">
-                    <a class="nav-link px-3 py-2 rounded" href="#about">About</a>
-                </li>
-                <li class="nav-item mx-1 mx-lg-2">
-                    <a class="nav-link px-3 py-2 rounded" href="#apply">Apply</a>
-                </li>
-                <li class="nav-item mx-1 mx-lg-2">
-                    <a class="nav-link px-3 py-2 rounded" href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Hon. Tajuddeen Abbas</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="projects.html">Programs</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#apply">Apply</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
 
             <!-- Header -->
             <header class="py-5">
                 <div class="container px-5 pb-5">
                     <div class="row gx-5 align-items-center">
                         <div class="col-xxl-12 text-center">
-                            <br>
-                            <br>
                             <!-- Hon. Tajuddeen Abbas's Name -->
                             <h1 class="display-1 fw-bolder mb-4">
                                 <span class="text-gradient d-inline">Hon. Tajuddeen Abbas GCON</span>
                             </h1>
                             <!-- Profile Picture -->
                             <div class="d-flex justify-content-center mb-4">
-                                <!-- <div class="profile bg-gradient-primary-to-secondary"> -->
-                                
-                                <div class="profile-img-container mx-auto mb-4">    <img class="profile-img" src="assets/profile.png" alt="Hon. Tajuddeen Abbas" />
-                                    <div class="dots-1">
-                                        <!-- SVG Dots (keep as is) -->
-                                    <!-- </div> -->
-                                    </div>
+                                <div class="profile-img-container mx-auto mb-4">
+                                    <img class="profile-img" src="assets/profile.png" alt="Hon. Tajuddeen Abbas" />
                                 </div>
                             </div>
                             <!-- Party Logo or Tagline -->
@@ -95,19 +198,24 @@
                                 <img src="assets/party-logo.png.jpg" alt="Party Logo" class="img-fluid" style="max-height: 80px;">
                             </div>
                             <!-- Tagline -->
-                            <div class="badge bg-gradient-primary-to-secondary text-white mb-4">
+                            <div class="badge bg-gradient-primary-to-secondary text-white mb-4 px-4 py-2">
                                 <div class="text-uppercase">Blockchain &middot; Graphics Design &middot; Free Training</div>
                             </div>
                             <!-- Subheading -->
-                            <div class="fs-3 fw-light text-muted mb-5">
+                            <div class="fs-3 fw-light text-dark mb-5">
                                 Empowering students with in-demand skills for the future.
                             </div>
                             <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-                    <script>
-                    document.querySelector('a[href="#apply"]').addEventListener('click', () => {
-                        confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
-                    });
-                    </script>
+                            <script>
+                            document.querySelector('a[href="#apply"]').addEventListener('click', () => {
+                                confetti({ 
+                                    particleCount: 150, 
+                                    spread: 70, 
+                                    origin: { y: 0.6 },
+                                    colors: ['#0d6efd', '#6610f2', '#198754', '#fd7e14']
+                                });
+                            });
+                            </script>
                             <!-- Call-to-Action Buttons -->
                             <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
                                 <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="#apply">Apply Now</a>
@@ -126,10 +234,10 @@
                                 <h2 class="display-5 fw-bolder">
                                     <span class="text-gradient d-inline">About the Program</span>
                                 </h2>
-                                <p class="lead fw-light mb-4">
+                                <p class="lead fw-light mb-4 text-dark">
                                     Hon. Tajuddeen Abbas is offering free training in Blockchain Technology and Graphics Design to empower students with in-demand skills.
                                 </p>
-                                <p class="text-muted">
+                                <p class="text-dark">
                                     This program is designed to provide hands-on training and practical knowledge to help students excel in the tech industry. Whether you're a beginner or looking to enhance your skills, this program is for you!
                                 </p>
                                 <div class="d-flex justify-content-center fs-2 gap-4">
@@ -160,7 +268,7 @@
                         <h2 class="display-5 fw-bolder">
                             <span class="text-gradient d-inline">Apply for Training</span>
                         </h2>
-                        <p class="lead fw-light mb-4">
+                        <p class="lead fw-light mb-4 text-dark">
                             Fill out the form below to apply for the free Blockchain and Graphics Design training.
                         </p>
                     </div>
@@ -178,32 +286,35 @@
                 <div class="container px-5">
                     <div class="row align-items-center justify-content-between flex-column flex-sm-row">
                         <div class="col-auto">
-                            <div class="small m-0">Copyright &copy; Hon. Tajuddeen Abbas 2025</div>
+                            <div class="small m-0 text-dark">Copyright &copy; Hon. Tajuddeen Abbas 2025</div>
                         </div>
                         <div class="col-auto">
-                            <a class="small" href="#!">Privacy</a>
-                            <span class="mx-1">&middot;</span>
-                            <a class="small" href="#!">Terms</a>
-                            <span class="mx-1">&middot;</span>
-                            <a class="small" href="#!">Contact</a>
-                            <span class="mx-1">&middot;</span>
-                            <a class="small" href="https://twitter.com/YourTwitterHandle"><i class="bi bi-twitter"></i></a>
-                            <span class="mx-1">&middot;</span>
-                            <a class="small" href="https://linkedin.com/in/YourLinkedInProfile"><i class="bi bi-linkedin"></i></a>
+                            <a class="small text-dark" href="#!">Privacy</a>
+                            <span class="mx-1 text-dark">&middot;</span>
+                            <a class="small text-dark" href="#!">Terms</a>
+                            <span class="mx-1 text-dark">&middot;</span>
+                            <a class="small text-dark" href="#!">Contact</a>
+                            <span class="mx-1 text-dark">&middot;</span>
+                            <a class="small text-primary" href="https://twitter.com/YourTwitterHandle"><i class="bi bi-twitter"></i></a>
+                            <span class="mx-1 text-dark">&middot;</span>
+                            <a class="small text-primary" href="https://linkedin.com/in/YourLinkedInProfile"><i class="bi bi-linkedin"></i></a>
                         </div>
                     </div>
                 </div>
             </footer>
-            <!-- Bootstrap core JS-->
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-            <script>
-                // Navbar scroll effect
-                window.addEventListener('scroll', function() {
-                    const navbar = document.querySelector('.custom-navbar');
-                    if (window.scrollY > 30) {
-                        navbar.classList.add('scrolled');
-                    } else {
-                        navbar.classList.remove('scrolled');
-                    }
-                });
-                </script>
+        </main>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            // Navbar scroll effect
+            window.addEventListener('scroll', function() {
+                const navbar = document.querySelector('.navbar');
+                if (window.scrollY > 30) {
+                    navbar.classList.add('shadow');
+                } else {
+                    navbar.classList.remove('shadow');
+                }
+            });
+        </script>
+    </body>
+</html>
